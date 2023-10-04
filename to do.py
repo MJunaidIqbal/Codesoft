@@ -11,7 +11,7 @@ class todo:
         self.label=Label(self.root, text="First Task To-do App", font='Rust, 25 bold ', width=10, bd=5, fg="black")
         self.label.pack(side="top", fill=BOTH)
         
-        self.label2=Label(self.root, text="Add task", font='arial, 18 bold', width=10, bd=5, fg="black")
+        self.label2=Label(self.root, text="Add Items", font='arial, 18 bold', width=10, bd=5, fg="black")
         self.label2.place(x="15", y='100')
         
         self.text= Text(self.root, height=2, bd=5, font="ariel, 18 bold", width=40)
@@ -52,7 +52,7 @@ class todo:
                 self.main_text.insert(END, ready)
             file.close()
             
-        self.button = Button(self.root, text="Add", font='sarif, 15 bold ', bd=5, bg='green', fg='White', command=add)
+        self.button = Button(self.root, text="Submit", font='sarif, 15 bold ', bd=5, bg='green', fg='White', command=add)
         self.button.place(x=600, y=150)
         
         self.button2 = Button(self.root, text="Delete", font='sarif, 15 bold ', bd=5, bg='green', fg='White', command=delete)
